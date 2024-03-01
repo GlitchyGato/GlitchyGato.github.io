@@ -2,39 +2,59 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="initial-scale=1, width=device-width">
-        <title>GlitchyGato</title>
-        <link rel="stylesheet" href="css/styles.css">        
+        <link rel="stylesheet" href="css/styles.css">   
+        <script src="scripts/script.js"></script>
+        <title>GlitchyGato</title>        
     </head>
-    <body class="test">
-        <!-- Navigation menu containing links to other pages-->
-        <div>
-            <a href="pages/about.html">About Me</a>
-            <a href="pages/studies.html">My Studies</a>
-            <a href="pages/contact.html">Contact Me</a>
-        </div>
+    <body>
+        <div class="homepagebar">
+            <!-- Navigation menu containing links to other pages-->
+            <div id="sideNavigationMenu" class="sidenav">
+                <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/studies.html">Studies</a>
+                <a href="pages/contact.html">Contact</a>
+            </div>
 
+            <!-- button used to open the sidenavigation menu-->
+            <button onclick="openNav()">Menu</button>
+        </div>
+            
         <!-- Presentation: add photo and brief introduction of yourself-->
-        <div>
-            Hello.
+        <div class="homesection">
+            <img src="images/profilepic.jpg" alt="Profile picture" width="500" height="500">
+            <p>
+                Hello, I'm Gabriel Pacheco Cardenas. I'm 17 years old and I'm currently studying and exploring areas of my interest with online courses. 
+                Thank you for being here!
+            </p>
         </div>
 
         <!-- About me: Who I am? button that links to about.html-->
         <!-- should I add more photos?-->
-        <div>
+        <div class="homesection">
+            <p>
+                Do you want to know a little bit more about myself? I feel honored.
+            </p>
             <form action="pages/about.html">
                 <button>About me</button>
             </form>
         </div>
 
         <!-- My studies: What have I done? button that links to studies.html-->
-        <div>
+        <div class="homesection">
+            <p>
+                These are the things I have completed throughout the years.
+            </p>
             <form action="pages/studies.html">
                 <button>My studies</button>
             </form>
         </div>
 
         <!-- Contact me: how can you get in touch with me? button that links to contact me page-->
-        <div>
+        <div class="homesection">
+            <p>
+                Do you want to get in touch with me? Contact me!
+            </p>
             <form action="pages/contact.html">
                 <button>Contact me</button>
             </form>
