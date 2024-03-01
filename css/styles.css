@@ -1,0 +1,61 @@
+body {
+  background-color: #F2F2F2;
+  color: #0D0D0D; }
+
+.homepagebar {
+  background-color: #56BF7B; }
+
+.homesection {
+  margin: 50px; }
+
+/* Side navigation menu */
+.sidenav {
+  position: fixed;
+  /* in place */
+  left: 0;
+  top: 0;
+  /* Stay at the top */
+  z-index: 1;
+  /* Stay on top */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  height: 100%;
+  /* 100% Full-height */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  background-color: #142F40;
+  transition: 0.6s;
+  /* transition effect to slide in the sidenav */ }
+
+/* Navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f2f2f2b3;
+  display: block;
+  transition: 0.3s; }
+
+/* Navigation menu links hover */
+.sidenav a:hover {
+  color: #F2F2F2; }
+
+/* Navigation menu close button */
+.sidenav .closebutton {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+/* Navigation menu on smalller screens */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+
+  .sidenav a {
+    font-size: 18px; } }
+
+/*# sourceMappingURL=styles.css.map */
