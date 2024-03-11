@@ -6,58 +6,50 @@
         <script src="scripts/script.js"></script>
         <title>GlitchyGato</title>        
     </head>
-    <body>
-        <div class="homepagebar">
-            <!-- Navigation menu containing links to other pages-->
-            <div id="sideNavigationMenu" class="sidenav">
-                <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
-                <a href="pages/about.html">About</a>
-                <a href="pages/studies.html">Studies</a>
-                <a href="pages/contact.html">Contact</a>
+    <body>            
+        <div>    
+            <!-- Presentation: add photo and brief introduction of yourself-->
+            <div>
+                <img id="homeimg" src="images/profilepic.jpg" alt="Profile picture" width="500" height="500">
             </div>
+            <div>
+                <h4>
+                    Hello, I'm Gabriel Pacheco Cardenas. I'm 17 years old and I'm currently studying and exploring areas of my interest with online courses. 
+                    Thank you for being here!
+                </h4>
+                <div>
+                    <!-- My studies: What have I done? button that links to studies.html-->
+                    <div>
+                        <p>
+                            These are the things I have completed throughout the years.
+                        </p>
+                        <form action="pages/studies.html">
+                            <button class="btn studies">My studies</button>
+                        </form>
+                    </div>
 
-            <!-- button used to open the sidenavigation menu-->
-            <button onclick="openNav()">Menu</button>
-        </div>
-            
-        <!-- Presentation: add photo and brief introduction of yourself-->
-        <div class="homesection">
-            <img src="images/profilepic.jpg" alt="Profile picture" width="500" height="500">
-            <p>
-                Hello, I'm Gabriel Pacheco Cardenas. I'm 17 years old and I'm currently studying and exploring areas of my interest with online courses. 
-                Thank you for being here!
-            </p>
-        </div>
+                    <!-- Contact me: how can you get in touch with me?-->
+                    <div>
+                        <p>
+                            Do you want to get in touch with me? Contact me!
+                        </p>
+                        <form action="pages/contact.html">
+                            <button class="btn contact">Contact me</button>
+                        </form>
+                    </div>
 
-        <!-- About me: Who I am? button that links to about.html-->
-        <!-- should I add more photos?-->
-        <div class="homesection">
-            <p>
-                Do you want to know a little bit more about myself? I feel honored.
-            </p>
-            <form action="pages/about.html">
-                <button>About me</button>
-            </form>
-        </div>
-
-        <!-- My studies: What have I done? button that links to studies.html-->
-        <div class="homesection">
-            <p>
-                These are the things I have completed throughout the years.
-            </p>
-            <form action="pages/studies.html">
-                <button>My studies</button>
-            </form>
-        </div>
-
-        <!-- Contact me: how can you get in touch with me? button that links to contact me page-->
-        <div class="homesection">
-            <p>
-                Do you want to get in touch with me? Contact me!
-            </p>
-            <form action="pages/contact.html">
-                <button>Contact me</button>
-            </form>
+                    <!-- About me: Who I am?-->
+                    <!-- should I add more photos?-->
+                    <div>
+                        <p>
+                            Just in case you want to know a little bit more about me.
+                        </p>
+                        <form action="pages/about.html">
+                            <button class="btn about">About me</button>
+                        </form>
+                    </div>
+                </div>
+            </div>    
         </div>
     </body>
 </html>

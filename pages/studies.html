@@ -4,12 +4,22 @@
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <link rel="stylesheet" href="../css/styles.css">   
         <script src="../scripts/script.js"></script>
-        <title>About Me - GlitchyGato</title>    
+        <title>Studies - GlitchyGato</title>    
     </head>
     <body>
-        <div>
-            <a href="../index.html">Homepage</a>
-        </div>
+        <!-- Navigation menu containing links to other pages-->
+        <div class="homepagebar">        
+            <div id="sideNavigationMenu" class="sidenav">
+                <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+                <a href="../index.html">Homepage</a>
+                <a class="selected" href="studies.html">Studies</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+
+            <!-- button used to open the sidenavigation menu-->
+            <button onclick="openNav()">Menu</button>
+        </div>       
         miau. miau. miau.
     </body>
 </html>

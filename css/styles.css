@@ -1,12 +1,46 @@
+/* These characters at the beginning mean: b=Brighter and d=Darker */
+/* Color in which all other colors are based */
+/* Gradient of greens */
+/* Brighter and darker colors */
 body {
   background-color: #F2F2F2;
-  color: #0D0D0D; }
+  color: #0D0D0D;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal; }
 
-.homepagebar {
-  background-color: #56BF7B; }
+.btn {
+  border-radius: 1px;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  width: 140px; }
 
-.homesection {
-  margin: 50px; }
+.studies {
+  background-color: #29B347; }
+
+.studies:hover {
+  background-color: #23993D; }
+
+.contact {
+  background-color: #29B375; }
+
+.contact:hover {
+  background-color: #239964; }
+
+.about {
+  background-color: #29B3A0; }
+
+.about:hover {
+  background-color: #239989; }
+
+#homeimg {
+  border-radius: 50%;
+  /* round image */
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  float: left; }
 
 /* Side navigation menu */
 .sidenav {
@@ -25,8 +59,8 @@ body {
   /* Disable horizontal scroll */
   padding-top: 60px;
   /* Place content 60px from the top */
-  background-color: #142F40;
-  transition: 0.6s;
+  background-color: #0D0D0D;
+  transition: 0.3s;
   /* transition effect to slide in the sidenav */ }
 
 /* Navigation menu links */
@@ -34,9 +68,13 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #f2f2f2b3;
+  color: #BFBFBF;
   display: block;
-  transition: 0.3s; }
+  transition: 0.4s; }
+
+/* Active Navigation menu link*/
+.sidenav a.selected {
+  background-color: #54B393; }
 
 /* Navigation menu links hover */
 .sidenav a:hover {
@@ -57,5 +95,9 @@ body {
 
   .sidenav a {
     font-size: 18px; } }
+/* Elements organization on mobile screens */
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

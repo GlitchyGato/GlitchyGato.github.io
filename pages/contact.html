@@ -7,8 +7,18 @@
         <title>Contact Me - GlichyGato</title>  
     </head>
     <body>
-        <div>
-            <a href="../index.html">Homepage</a>
+        <!-- Navigation menu containing links to other pages-->
+        <div class="homepagebar">        
+            <div id="sideNavigationMenu" class="sidenav">
+                <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+                <a href="../index.html">Homepage</a>
+                <a href="studies.html">Studies</a>
+                <a class="selected" href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+
+            <!-- button used to open the sidenavigation menu-->
+            <button onclick="openNav()">Menu</button>
         </div>
         Hello.
     </body>

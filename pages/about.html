@@ -4,12 +4,23 @@
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <link rel="stylesheet" href="../css/styles.css">   
         <script src="../scripts/script.js"></script>
-        <title>About Me - GlitchyGato</title>  
+        <title>About Me - GlitchyGato</title>
     </head>
     <body>
-        <div>
-            <a href="../index.html">Homepage</a>
+        <!-- Navigation menu containing links to other pages-->
+        <div class="homepagebar">        
+            <div id="sideNavigationMenu" class="sidenav">
+                <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+                <a href="../index.html">Homepage</a>
+                <a href="studies.html">Studies</a>
+                <a href="contact.html">Contact</a>
+                <a class="selected" href="about.html">About</a>
+            </div>
+
+            <!-- button used to open the sidenavigation menu-->
+            <button onclick="openNav()">Menu</button>
         </div>
+
         <p>
             I am from Bogotá, Colombia. I dropped out of school on may 2021. Since then, I've been working with online courses, learning about things I previously knew and things I completely know nothing about. 
             I am passionate about my own learning, passionate about doing the things right, and passionate about constantly involving myself in new and exciting areas of my interest. 
@@ -18,8 +29,5 @@
         <h4>
             Do you want to get in touch with me? Contact me!
         </h4>
-        <form action="contact.html">
-            <button>Contact me</button>
-        </form>
     </body>
 </html>

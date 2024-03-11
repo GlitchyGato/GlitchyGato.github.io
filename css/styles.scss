@@ -1,23 +1,66 @@
+/* These characters at the beginning mean: b=Brighter and d=Darker */
+/* Color in which all other colors are based */
+$primarycolor: #3C8069;
+$bprimarycolor: #54B393;
+
+/* Gradient of greens */
+$firstgreen: #29B347;
+$dfirstgreen:#23993D;
+$secondgreen: #29B375;
+$dsecondgreen:#239964;
+$thirdgreen:#29B3A0;
+$dthirdgreen:#239989;
+
+/* Brighter and darker colors */
 $brightcolor:#F2F2F2;
-$darkerbrightcolor:#f2f2f2b3;
+$dbrightcolor:#BFBFBF;
 $darkcolor:#0D0D0D;
 $darkbluecolor:#142F40;
-$firstgreen:#56BF7B;
-$secondgreen:#277365;
-$thirdgreen:#1AD9B6;
 
 
 body {
     background-color:$brightcolor;
     color:$darkcolor;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
 }
 
-.homepagebar {
+.btn {
+    border-radius: 1px;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    width: 140px;
+}
+
+.studies {
     background-color:$firstgreen;
 }
+.studies:hover {
+    background-color:$dfirstgreen;
+}
 
-.homesection {
-    margin: 50px;
+.contact {
+    background-color:$secondgreen;
+}
+.contact:hover {
+    background-color:$dsecondgreen;
+}
+
+.about {
+    background-color:$thirdgreen;
+}
+.about:hover {
+    background-color:$dthirdgreen;
+}
+
+#homeimg {
+    border-radius: 50%; /* round image */
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    float: left;
 }
 
 /* Side navigation menu */
@@ -30,8 +73,8 @@ body {
     height: 100%; /* 100% Full-height */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
-    background-color: $darkbluecolor;
-    transition: 0.6s; /* transition effect to slide in the sidenav */
+    background-color: $darkcolor;
+    transition: 0.3s; /* transition effect to slide in the sidenav */
 }
 
 /* Navigation menu links */
@@ -39,10 +82,16 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: $darkerbrightcolor;
+    color: $dbrightcolor;
     display: block;
-    transition: 0.3s;
+    transition: 0.4s;
 }
+
+/* Active Navigation menu link*/
+.sidenav a.selected {
+    background-color: $bprimarycolor;
+}
+
 
 /* Navigation menu links hover */
 .sidenav a:hover {
@@ -63,3 +112,10 @@ body {
    .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;} 
 }
+
+/* Elements organization on mobile screens */
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+  
