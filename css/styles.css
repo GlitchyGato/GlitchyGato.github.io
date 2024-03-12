@@ -16,6 +16,9 @@ body {
   cursor: pointer;
   width: 140px; }
 
+.centered {
+  text-align: center; }
+
 .studies {
   background-color: #29B347; }
 
@@ -87,6 +90,11 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px; }
+
+/* Embedded spreadsheet in Studies page style configuration */
+.spreadsheet {
+  width: 1300px;
+  height: 1600px; }
 
 /* Navigation menu on smalller screens */
 @media screen and (max-height: 450px) {
