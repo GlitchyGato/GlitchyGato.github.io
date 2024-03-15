@@ -8,6 +8,13 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal; }
 
+p {
+  margin: 20px; }
+
+.centered {
+  text-align: center; }
+
+/* homepage buttons */
 .btn {
   border-radius: 1px;
   border: none;
@@ -16,27 +23,34 @@ body {
   cursor: pointer;
   width: 140px; }
 
-.centered {
-  text-align: center; }
-
 .studies {
   background-color: #29B347; }
 
 .studies:hover {
   background-color: #23993D; }
 
-.contact {
+.about {
   background-color: #29B375; }
 
-.contact:hover {
+.about:hover {
   background-color: #239964; }
 
-.about {
+.contact {
   background-color: #29B3A0; }
 
-.about:hover {
+.contact:hover {
   background-color: #239989; }
 
+/* menu page */
+.menu {
+  padding: 5px 5px;
+  width: 50px;
+  background-color: #0D0D0D; }
+
+.menu:hover {
+  background-color: #54B393; }
+
+/* homepage image */
 #homeimg {
   border-radius: 50%;
   /* round image */
@@ -44,6 +58,20 @@ body {
   max-width: 350px;
   height: auto;
   float: left; }
+
+/* Customized hr for pages */
+#studieshr, #abouthr, #contacthr {
+  height: 3px;
+  border: none; }
+
+#studieshr {
+  background-color: #29B347; }
+
+#abouthr {
+  background-color: #29B375; }
+
+#contacthr {
+  background-color: #29B3A0; }
 
 /* Side navigation menu */
 .sidenav {

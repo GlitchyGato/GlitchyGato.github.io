@@ -25,6 +25,15 @@ body {
     font-style: normal;
 }
 
+p {
+    margin: 20px;
+}
+
+.centered {
+    text-align:center;
+}
+
+/* homepage buttons */
 .btn {
     border-radius: 1px;
     border: none;
@@ -34,10 +43,6 @@ body {
     width: 140px;
 }
 
-.centered {
-    text-align:center;
-}
-
 .studies {
     background-color:$firstgreen;
 }
@@ -45,26 +50,58 @@ body {
     background-color:$dfirstgreen;
 }
 
-.contact {
+.about {
     background-color:$secondgreen;
 }
-.contact:hover {
+.about:hover {
     background-color:$dsecondgreen;
 }
 
-.about {
+.contact {
     background-color:$thirdgreen;
 }
-.about:hover {
+.contact:hover {
     background-color:$dthirdgreen;
 }
 
+/* menu page */
+.menu {
+    padding: 5px 5px;
+    width: 50px;
+    background-color:$darkcolor;
+}
+.menu:hover {
+    background-color:$bprimarycolor;
+}
+
+/* homepage image */
 #homeimg {
     border-radius: 50%; /* round image */
     width: 100%;
     max-width: 350px;
     height: auto;
     float: left;
+}
+
+/* Customized hr for pages */
+%hr {
+    height: 3px;
+    border: none;
+}
+
+#studieshr {
+    @extend %hr;
+    background-color: $firstgreen;
+}
+
+#abouthr {
+    @extend %hr;
+    background-color: $secondgreen;
+}
+
+#contacthr {
+    @extend %hr;
+    background-color: $thirdgreen;
 }
 
 /* Side navigation menu */
@@ -95,7 +132,6 @@ body {
 .sidenav a.selected {
     background-color: $bprimarycolor;
 }
-
 
 /* Navigation menu links hover */
 .sidenav a:hover {
