@@ -15,7 +15,10 @@ $dthirdgreen:#239989;
 $brightcolor:#F2F2F2;
 $dbrightcolor:#BFBFBF;
 $darkcolor:#0D0D0D;
-$darkbluecolor:#142F40;
+$darktransparentcolor:#0d0d0d71;
+$bdarkcolor: #848484;
+$bdarktransparentcolor: #848484d0;
+$darkbluecolor:#142f40;
 
 
 body {
@@ -23,6 +26,10 @@ body {
     color:$darkcolor;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
+}
+
+h2 {
+    font-size: 200%;
 }
 
 p {
@@ -64,14 +71,14 @@ p {
     background-color:$dthirdgreen;
 }
 
-/* menu page */
+/* menu (sidenav) button */
 .menu {
     padding: 5px 5px;
     width: 50px;
     background-color:$darkcolor;
 }
 .menu:hover {
-    background-color:$bprimarycolor;
+    background-color:$bdarkcolor;
 }
 
 /* homepage image */
@@ -88,20 +95,28 @@ p {
     height: 3px;
     border: none;
 }
-
 #studieshr {
     @extend %hr;
     background-color: $firstgreen;
 }
-
 #abouthr {
     @extend %hr;
     background-color: $secondgreen;
 }
-
 #contacthr {
     @extend %hr;
     background-color: $thirdgreen;
+}
+
+/* Embedded spreadsheet in Studies page */
+.spreadsheet {
+    width: 1300px;
+    height: 1600px;
+}
+.spreadsheetbtn {
+    padding: 5px 5px;
+    width: 300px;
+    background-color:$darkcolor; 
 }
 
 /* Side navigation menu */
@@ -129,8 +144,14 @@ p {
 }
 
 /* Active Navigation menu link*/
-.sidenav a.selected {
-    background-color: $bprimarycolor;
+.sidenav a.firstselected {
+    background-color: $firstgreen;
+}
+.sidenav a.secondselected {
+    background-color: $secondgreen;
+}
+.sidenav a.thirdselected {
+    background-color: $thirdgreen;
 }
 
 /* Navigation menu links hover */
@@ -147,10 +168,97 @@ p {
     margin-left: 50px;
 }
 
-/* Embedded spreadsheet in Studies page style configuration */
-.spreadsheet {
-    width: 1300px;
-    height: 1600px;
+/* Carousel container */
+.carousel-container {
+    max-width: 650px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.imgCarousel {
+    display: none;
+}
+
+/* Image counter (1/4 etc) */
+.imgCounter {
+    background-color: $darktransparentcolor;
+    color: $brightcolor;
+    font-size: 10px;
+    border-radius: 20%;
+    padding: 8px 12px;
+    margin: 10px 10px;
+    position: absolute;
+    top: 0;
+}
+
+/* Image caption text */
+.imgText {
+    background-color: $darktransparentcolor;
+    color: $brightcolor;
+    font-size: 12px;
+    border-radius: 5%;
+    padding: 8px 12px;
+    margin: 10px 10px;
+    position: absolute;
+    bottom: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: $bdarktransparentcolor;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
 }
 
 /* Navigation menu on smalller screens */
@@ -159,9 +267,3 @@ p {
    .sidenav a {font-size: 18px;} 
 }
 
-/* Elements organization on mobile screens */
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
-  
